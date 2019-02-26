@@ -17,8 +17,8 @@ Route::get('/', function () {
 Route::get('/produk', function () {
     return view('produk');
 })->name('produk');
-Route::get('/detail-produk/{id}', function ($id) {
-    return view('detail-produk',array('id'=>$id));
+Route::get('/detail-produk', function () {
+    return view('detail-produk');
 })->name('detail-produk');
 Route::get('/keranjang', function () {
     return view('keranjang');
